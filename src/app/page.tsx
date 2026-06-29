@@ -49,16 +49,16 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center overflow-hidden">
         <Image
           src="/hero-banner.png"
           alt="DistroDad workspace with vinyl records, headphones, and notebook"
           fill
-          className="object-cover object-center"
+          className="object-cover object-[60%_center] md:object-center"
           priority
         />
-        <div className="absolute inset-0 bg-[#1a2744]/70" />
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-20">
+        <div className="absolute inset-0 bg-[#1a2744]/75" />
+        <div className="relative z-10 max-w-6xl mx-auto px-4 py-14 md:py-20">
           <p className="text-[#c9a84c] font-[family-name:var(--font-inter)] text-sm uppercase tracking-widest mb-4 font-semibold">
             Built by musicians (and yes, a few dads)
           </p>
