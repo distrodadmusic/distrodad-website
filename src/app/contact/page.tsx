@@ -26,8 +26,20 @@ function ContactForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const data = {
+      name: form.name,
+      email: form.email,
+      subject: subjects[type as keyof typeof subjects] ?? subjects.general,
+      message: form.message,
+      type,
+    };
+    await fetch("https://formspree.io/f/xgojzrqk", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(data),
+    });
     setSubmitted(true);
   }
 

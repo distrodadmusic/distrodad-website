@@ -42,8 +42,20 @@ export default function GetStarted() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    const data = {
+      ...form,
+      services: selectedServices.join(", "),
+      currentDSPs: selectedDSPs.join(", "),
+      pro: form.pro,
+      timeline: form.timeline,
+    };
+    await fetch("https://formspree.io/f/xgojzrqk", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(data),
+    });
     setSubmitted(true);
   }
 
