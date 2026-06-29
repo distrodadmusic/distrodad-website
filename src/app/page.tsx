@@ -48,17 +48,20 @@ const faqs = [
 export default function Home() {
   return (
     <>
-      {/* Hero */}
-      <section className="relative min-h-[60vh] md:min-h-[80vh] flex items-center overflow-hidden">
+      {/* Banner Strip */}
+      <div className="w-full h-[220px] md:h-[340px] overflow-hidden relative">
         <Image
           src="/hero-banner.png"
           alt="DistroDad workspace with vinyl records, headphones, and notebook"
           fill
-          className="object-cover object-[60%_center] md:object-center"
+          className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-[#1a2744]/75" />
-        <div className="relative z-10 max-w-6xl mx-auto px-4 py-14 md:py-20">
+      </div>
+
+      {/* Hero Headline */}
+      <section className="bg-[#1a2744] text-[#f5f0e8]">
+        <div className="max-w-6xl mx-auto px-4 py-14 md:py-20">
           <p className="text-[#c9a84c] font-[family-name:var(--font-inter)] text-sm uppercase tracking-widest mb-4 font-semibold">
             Built by musicians (and yes, a few dads)
           </p>
