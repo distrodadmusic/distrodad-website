@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "Why \"Just Drop It Tomorrow\" Is the Most Expensive Decision You Can Make",
+    excerpt: "The date you hit \"submit\" matters almost as much as the song itself. Here's why waiting pays off — and exactly how to plan your timeline.",
+    category: "Release Guides",
+    date: "June 30, 2026",
+    slug: "/blog/release-timing-matters",
+  },
+  {
     title: "What Is a PRO and Why Does Every Songwriter Need One?",
     excerpt: "If you've written a song and you're not registered with a Performing Rights Organization, you're leaving money on the table. Here's what you need to know.",
     category: "Royalties",
@@ -40,6 +47,7 @@ const posts = [
 ];
 
 const categoryColors: Record<string, string> = {
+  "Release Guides": "bg-[#c9a84c]/20 text-[#8a6f2e]",
   Royalties: "bg-[#3d6b4f]/15 text-[#3d6b4f]",
   Publishing: "bg-[#3d6b9e]/15 text-[#3d6b9e]",
   Distribution: "bg-[#c9a84c]/20 text-[#8a6f2e]",
@@ -68,18 +76,26 @@ export default function Blog() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {posts.map((post) => (
-              <div key={post.title} className="bg-white border border-[#1a2744]/10 rounded-xl p-6 shadow-sm opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <span className={`text-xs px-2.5 py-1 rounded-full font-[family-name:var(--font-inter)] font-semibold ${categoryColors[post.category] ?? ""}`}>
-                    {post.category}
-                  </span>
-                  <span className="text-xs text-[#1a2744]/40 font-[family-name:var(--font-inter)]">{post.date}</span>
+            {posts.map((post) => {
+              const card = (
+                <div key={post.title} className={`bg-white border border-[#1a2744]/10 rounded-xl p-6 shadow-sm transition-shadow ${"slug" in post ? "hover:shadow-md cursor-pointer" : "opacity-75"}`}>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className={`text-xs px-2.5 py-1 rounded-full font-[family-name:var(--font-inter)] font-semibold ${categoryColors[post.category] ?? ""}`}>
+                      {post.category}
+                    </span>
+                    <span className="text-xs text-[#1a2744]/40 font-[family-name:var(--font-inter)]">{post.date}</span>
+                  </div>
+                  <h2 className="font-[family-name:var(--font-playfair)] font-bold text-[#1a2744] text-lg mb-3 leading-snug">{post.title}</h2>
+                  <p className="text-[#1a2744]/65 font-[family-name:var(--font-inter)] text-sm leading-relaxed">{post.excerpt}</p>
+                  {"slug" in post && (
+                    <p className="mt-4 text-xs font-semibold text-[#3d6b9e] font-[family-name:var(--font-inter)]">Read post →</p>
+                  )}
                 </div>
-                <h2 className="font-[family-name:var(--font-playfair)] font-bold text-[#1a2744] text-lg mb-3 leading-snug">{post.title}</h2>
-                <p className="text-[#1a2744]/65 font-[family-name:var(--font-inter)] text-sm leading-relaxed">{post.excerpt}</p>
-              </div>
-            ))}
+              );
+              return "slug" in post ? (
+                <Link key={post.title} href={(post as typeof post & { slug: string }).slug}>{card}</Link>
+              ) : card;
+            })}
           </div>
         </div>
       </section>
