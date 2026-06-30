@@ -65,11 +65,22 @@ export default function GetStarted() {
   if (submitted) {
     return (
       <section className="min-h-[70vh] flex items-center justify-center bg-[#f5f0e8]">
-        <div className="text-center py-16 px-4">
-          <div className="text-6xl mb-6">🎵</div>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#1a2744] mb-4">You&apos;re in the queue!</h2>
-          <p className="text-[#1a2744]/70 font-[family-name:var(--font-inter)] max-w-md mx-auto leading-relaxed">
-            Thanks for reaching out. We&apos;ll review your info and get back to you within 1–2 business days. Talk soon.
+        <div className="text-center py-16 px-4 max-w-lg mx-auto">
+          <div className="text-5xl mb-6">🎵</div>
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-[#1a2744] mb-3">You&apos;re in!</h2>
+          <p className="text-[#1a2744]/70 font-[family-name:var(--font-inter)] leading-relaxed mb-8">
+            We got your info. The fastest way to get the ball rolling is to book your free 30-minute onboarding call right now — pick a time that works for you and we&apos;ll come prepared.
+          </p>
+          <a
+            href="https://calendly.com/distro-dad-music/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#1a2744] text-[#f5f0e8] px-8 py-4 rounded font-[family-name:var(--font-inter)] font-bold text-base hover:bg-[#0f1a30] transition-colors mb-6"
+          >
+            Book Your Onboarding Call →
+          </a>
+          <p className="text-xs text-[#1a2744]/40 font-[family-name:var(--font-inter)]">
+            Prefer to wait? We&apos;ll follow up by email within 1–2 business days.
           </p>
         </div>
       </section>
