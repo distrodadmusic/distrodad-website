@@ -20,9 +20,12 @@ export default function GetStarted() {
     artistName: "",
     realName: "",
     email: "",
+    phone: "",
+    country: "",
     genre: "",
     instagram: "",
     spotify: "",
+    youtube: "",
     releases: "",
     pro: "",
     timeline: "",
@@ -108,6 +111,28 @@ export default function GetStarted() {
                     <input name="email" type="email" required value={form.email} onChange={handleChange} placeholder="your@email.com" className="w-full border border-[#1a2744]/20 rounded px-4 py-2.5 text-sm font-[family-name:var(--font-inter)] text-[#1a2744] bg-white focus:outline-none focus:border-[#1a2744] focus:ring-1 focus:ring-[#1a2744]" />
                   </div>
                   <div>
+                    <label className="block text-sm font-semibold text-[#1a2744] font-[family-name:var(--font-inter)] mb-1.5">Phone Number *</label>
+                    <input name="phone" type="tel" required value={form.phone} onChange={handleChange} placeholder="(555) 555-5555" className="w-full border border-[#1a2744]/20 rounded px-4 py-2.5 text-sm font-[family-name:var(--font-inter)] text-[#1a2744] bg-white focus:outline-none focus:border-[#1a2744] focus:ring-1 focus:ring-[#1a2744]" />
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div>
+                    <label className="block text-sm font-semibold text-[#1a2744] font-[family-name:var(--font-inter)] mb-1.5">Country *</label>
+                    <select name="country" required value={form.country} onChange={handleChange} className="w-full border border-[#1a2744]/20 rounded px-4 py-2.5 text-sm font-[family-name:var(--font-inter)] text-[#1a2744] bg-white focus:outline-none focus:border-[#1a2744] focus:ring-1 focus:ring-[#1a2744]">
+                      <option value="">Select country...</option>
+                      <option value="US">United States</option>
+                      <option value="CA">Canada</option>
+                      <option value="GB">United Kingdom</option>
+                      <option value="AU">Australia</option>
+                      <option value="DE">Germany</option>
+                      <option value="FR">France</option>
+                      <option value="MX">Mexico</option>
+                      <option value="BR">Brazil</option>
+                      <option value="NG">Nigeria</option>
+                      <option value="OTHER">Other</option>
+                    </select>
+                  </div>
+                  <div>
                     <label className="block text-sm font-semibold text-[#1a2744] font-[family-name:var(--font-inter)] mb-1.5">Genre</label>
                     <input name="genre" value={form.genre} onChange={handleChange} placeholder="e.g. Folk, R&B, Indie Rock" className="w-full border border-[#1a2744]/20 rounded px-4 py-2.5 text-sm font-[family-name:var(--font-inter)] text-[#1a2744] bg-white focus:outline-none focus:border-[#1a2744] focus:ring-1 focus:ring-[#1a2744]" />
                   </div>
@@ -121,6 +146,10 @@ export default function GetStarted() {
                     <label className="block text-sm font-semibold text-[#1a2744] font-[family-name:var(--font-inter)] mb-1.5">Spotify Artist Link</label>
                     <input name="spotify" value={form.spotify} onChange={handleChange} placeholder="open.spotify.com/artist/..." className="w-full border border-[#1a2744]/20 rounded px-4 py-2.5 text-sm font-[family-name:var(--font-inter)] text-[#1a2744] bg-white focus:outline-none focus:border-[#1a2744] focus:ring-1 focus:ring-[#1a2744]" />
                   </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-[#1a2744] font-[family-name:var(--font-inter)] mb-1.5">YouTube Channel</label>
+                  <input name="youtube" value={form.youtube} onChange={handleChange} placeholder="youtube.com/@yourchannel" className="w-full border border-[#1a2744]/20 rounded px-4 py-2.5 text-sm font-[family-name:var(--font-inter)] text-[#1a2744] bg-white focus:outline-none focus:border-[#1a2744] focus:ring-1 focus:ring-[#1a2744]" />
                 </div>
               </div>
             </div>
