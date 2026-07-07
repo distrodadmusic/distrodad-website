@@ -43,30 +43,30 @@ export default function ArtworkChecklist() {
 
             <p>Here&apos;s a simple checklist we use at DistroDad before submitting a release.</p>
 
+            <br />
+
             <h2>Album (or Single) Cover Artwork</h2>
             <p>
               This is the artwork that appears on Spotify, Apple Music, Amazon Music, YouTube Music, and most other
               streaming platforms.
             </p>
 
-            <h3>Recommended Specifications</h3>
-            <ul>
-              <li><strong>Minimum Size:</strong> 3000 × 3000 pixels</li>
-              <li><strong>Aspect Ratio:</strong> Square (1:1)</li>
-              <li><strong>File Type:</strong> JPG or PNG</li>
-              <li><strong>Color Mode:</strong> RGB</li>
-              <li><strong>Resolution:</strong> 72 dpi or higher</li>
-              <li><strong>Artwork should be clear and high quality</strong> (no blurry or pixelated images)</li>
-            </ul>
+            <p><strong>Recommended Specifications:</strong></p>
+            <div className="pl-8 space-y-1 mb-5 text-[#1a2744]/85">
+              <p className="!mb-1">Minimum Size: 3000 × 3000 pixels</p>
+              <p className="!mb-1">Aspect Ratio: Square (1:1)</p>
+              <p className="!mb-1">File Type: JPG or PNG</p>
+              <p className="!mb-1">Color Mode: RGB</p>
+              <p className="!mb-1">Resolution: 72 dpi or higher</p>
+              <p className="!mb-1">Artwork should be clear and high quality — no blurry or pixelated images</p>
+            </div>
 
-            <h3>Avoid</h3>
-            <ul>
-              <li>Web addresses</li>
-              <li>Social media handles</li>
-              <li>Pricing or promotional text</li>
-              <li>Excessive logos</li>
-              <li>Explicit copyrighted material you don&apos;t own</li>
-            </ul>
+            <p>
+              Avoid web addresses, social media handles, pricing or promo text, excessive logos, and copyrighted
+              material you don&apos;t own.
+            </p>
+
+            <br />
 
             <p>Remember: your album cover is often the very first impression listeners have of your music.</p>
 
@@ -78,14 +78,16 @@ export default function ArtworkChecklist() {
               platforms allow you to upload an artist photo that appears alongside your biography and releases.
             </p>
 
-            <h3>Recommended Specifications</h3>
-            <ul>
-              <li><strong>Minimum Size:</strong> 3000 × 3000 pixels</li>
-              <li><strong>Aspect Ratio:</strong> Square</li>
-              <li><strong>File Type:</strong> JPG or PNG</li>
-              <li><strong>Professional, well-lit photo</strong></li>
-              <li><strong>Consistent with your branding</strong></li>
-            </ul>
+            <p><strong>Recommended Specifications:</strong></p>
+            <div className="pl-8 space-y-1 mb-5 text-[#1a2744]/85">
+              <p className="!mb-1">Minimum Size: 3000 × 3000 pixels</p>
+              <p className="!mb-1">Aspect Ratio: Square</p>
+              <p className="!mb-1">File Type: JPG or PNG</p>
+              <p className="!mb-1">Professional, well-lit photo</p>
+              <p className="!mb-1">Consistent with your branding</p>
+            </div>
+
+            <br />
 
             <p>
               This doesn&apos;t have to be an expensive professional photo. A clean, high-quality image with good
@@ -101,25 +103,24 @@ export default function ArtworkChecklist() {
               branding that can be reused.
             </p>
 
-            <h3>Recommended Starting Point</h3>
-            <ul>
-              <li><strong>2048 × 1152 pixels (16:9)</strong></li>
-              <li>JPG or PNG</li>
-              <li>Under 6 MB</li>
-            </ul>
+            <p><strong>Recommended Starting Point:</strong></p>
+            <div className="pl-8 space-y-1 mb-5 text-[#1a2744]/85">
+              <p className="!mb-1">2048 × 1152 pixels (16:9)</p>
+              <p className="!mb-1">JPG or PNG</p>
+              <p className="!mb-1">Under 6 MB</p>
+            </div>
+
+            <br />
 
             <p>This size works well for YouTube and can often be adapted for other platforms.</p>
 
             <hr className="border-[#1a2744]/10 my-8" />
 
             <h2>Keep Your Branding Consistent</h2>
-            <p>Your artwork should feel like it belongs together. Try to use:</p>
-            <ul>
-              <li>The same fonts</li>
-              <li>Similar color palette</li>
-              <li>Consistent logos</li>
-              <li>Similar photographic style</li>
-            </ul>
+            <p>Your artwork should feel like it belongs together. Try to use the same fonts, a similar color palette, consistent logos, and a similar photographic style across all of your releases.</p>
+
+            <br />
+
             <p>Consistency helps listeners recognize your music wherever they find it.</p>
 
             <hr className="border-[#1a2744]/10 my-8" />
@@ -141,6 +142,8 @@ export default function ArtworkChecklist() {
               ))}
             </div>
 
+            <br />
+
             <p>
               Having these assets prepared before you upload your music will make distribution smoother and save time
               when it&apos;s time to claim your artist profiles.
@@ -149,13 +152,9 @@ export default function ArtworkChecklist() {
             <hr className="border-[#1a2744]/10 my-8" />
 
             <h2>Coming Next</h2>
-            <p>In a future guide we&apos;ll walk through:</p>
-            <ul>
-              <li>How to claim your Spotify for Artists profile</li>
-              <li>How to claim Apple Music for Artists</li>
-              <li>How to claim your Official Artist Channel on YouTube</li>
-              <li>When and how to merge your personal YouTube channel with your YouTube Music artist profile</li>
-            </ul>
+            <p>In a future guide we&apos;ll walk through how to claim your Spotify for Artists profile, how to claim Apple Music for Artists, how to claim your Official Artist Channel on YouTube, and when and how to merge your personal YouTube channel with your YouTube Music artist profile.</p>
+
+            <br />
 
             <p>
               Taking a little extra time to prepare your artwork before release can make your music look every bit as
