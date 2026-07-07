@@ -76,12 +76,6 @@ export default function Blog() {
 
       <section className="py-20 bg-[#f5f0e8]">
         <div className="max-w-5xl mx-auto px-4">
-          <p className="text-center text-[#1a2744]/50 font-[family-name:var(--font-inter)] text-sm mb-10">
-            Posts launching soon. In the meantime,{" "}
-            <Link href="/contact" className="text-[#3d6b9e] hover:underline">reach out</Link>{" "}
-            with questions — we&apos;re always happy to explain.
-          </p>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {posts.map((post) => {
               const card = (
