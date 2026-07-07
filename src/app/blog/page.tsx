@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "Why I (a Music Distributor) Released My Own Song",
+    excerpt: "I became my own client. Here's what I learned recording and releasing Punk Pledge — and why every DistroDad artist benefits from it.",
+    category: "DistroDad",
+    date: "July 7, 2026",
+    slug: "/blog/punk-pledge",
+  },
+  {
     title: "Why \"Just Drop It Tomorrow\" Is the Most Expensive Decision You Can Make",
     excerpt: "The date you hit \"submit\" matters almost as much as the song itself. Here's why waiting pays off — and exactly how to plan your timeline.",
     category: "Release Guides",
