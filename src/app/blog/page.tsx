@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const posts = [
   {
+    title: "The Artwork Checklist Every Independent Artist Needs Before Releasing Music",
+    excerpt: "One of the easiest ways to delay a release is submitting artwork that doesn't meet spec. Here's the checklist we use at DistroDad before every submission.",
+    category: "Release Guides",
+    date: "July 7, 2026",
+    slug: "/blog/artwork-checklist",
+  },
+  {
     title: "Why I (a Music Distributor) Released My Own Song",
     excerpt: "I became my own client. Here's what I learned recording and releasing Punk Pledge — and why every DistroDad artist benefits from it.",
     category: "DistroDad",
